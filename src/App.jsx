@@ -3,6 +3,7 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import Home from './components/Home';
 import About from './components/About';
+import History from './components/History';
 import Services from './components/Services';
 import Donate from './components/Donate';
 import Poojas from './components/Poojas';
@@ -16,6 +17,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
+        <Route path="/history" element={<History />} />
         <Route path="/services" element={<Services />} />
         <Route path="/donate" element={<Donate />} />
         <Route path="/poojas" element={<Poojas />} />

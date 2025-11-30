@@ -277,3 +277,352 @@ body { font-family: Arial, sans-serif; background: #f7f7f7; color: #222; }
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
+
+/* History Page Styles */
+.history-section {
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.history-section h2 {
+  color: #324a50;
+  margin-bottom: 20px;
+  font-size: 1.6rem;
+  border-bottom: 3px solid #ff4e24;
+  padding-bottom: 10px;
+}
+
+.vision-mission {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.vision-card, .mission-card {
+  background: linear-gradient(135deg, #f0f4f8 0%, #ffffff 100%);
+  padding: 20px;
+  border-radius: 8px;
+  border-left: 4px solid #ff4e24;
+  line-height: 1.8;
+}
+
+.vision-card h3, .mission-card h3 {
+  color: #324a50;
+  margin-bottom: 12px;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.value-card {
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  border: 2px solid #e0e0e0;
+  transition: all .2s;
+}
+
+.value-card:hover {
+  border-color: #ff4e24;
+  box-shadow: 0 4px 12px rgba(255,78,36,0.15);
+}
+
+.value-card h3 {
+  color: #ff4e24;
+  margin-bottom: 8px;
+}
+
+.timeline {
+  position: relative;
+  margin-top: 40px;
+  padding: 20px 0;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 20px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: #ff4e24;
+}
+
+.timeline-item {
+  display: flex;
+  margin-bottom: 30px;
+  position: relative;
+  padding-left: 80px;
+}
+
+.timeline-marker {
+  position: absolute;
+  left: 0;
+  top: 5px;
+  width: 40px;
+  height: 40px;
+  background: #324a50;
+  border: 3px solid #ff4e24;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.timeline-content {
+  background: #f9f9f9;
+  padding: 16px;
+  border-radius: 6px;
+  border-left: 3px solid #ff4e24;
+}
+
+.timeline-content h3 {
+  color: #324a50;
+  margin-bottom: 8px;
+  font-size: 1.1rem;
+}
+
+.timeline-content p {
+  color: #555;
+  line-height: 1.6;
+}
+
+.philosophy {
+  background: linear-gradient(135deg, #f5f5f5 0%, #ffffff 100%);
+  font-size: 1.1rem;
+  line-height: 1.9;
+  text-align: center;
+  color: #333;
+}
+
+.philosophy p {
+  font-style: italic;
+  color: #555;
+}
+
+/* Map Section */
+.map-section {
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.map-section h2 {
+  color: #324a50;
+  margin-bottom: 20px;
+  font-size: 1.6rem;
+}
+
+.map-container {
+  margin-bottom: 16px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.map-note {
+  text-align: center;
+  margin-top: 12px;
+}
+
+.map-note a {
+  color: #ff4e24;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.map-note a:hover {
+  text-decoration: underline;
+}
+
+/* Sloka Header Styles */
+.sloka-header {
+  background: linear-gradient(135deg, #2c1810 0%, #3d2817 100%);
+  padding: 16px;
+  text-align: center;
+  border-bottom: 3px solid #ff4e24;
+}
+
+.sloka-blessing {
+  margin-bottom: 12px;
+}
+
+.blessing-text {
+  color: #ffd700;
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin: 0;
+  font-style: italic;
+  letter-spacing: 1px;
+}
+
+.slokas-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.sloka-item {
+  flex: 1;
+  min-width: 250px;
+  max-width: 500px;
+}
+
+.sloka-kannada {
+  color: #ffd700;
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0 0 6px 0;
+  line-height: 1.6;
+  font-family: 'Arial', sans-serif;
+}
+
+.sloka-english {
+  color: #ffffff;
+  font-size: 0.85rem;
+  margin: 0;
+  letter-spacing: 0.5px;
+  opacity: 0.9;
+}
+
+.sloka-divider {
+  width: 2px;
+  height: 40px;
+  background: #ff4e24;
+  border-radius: 1px;
+}
+
+@media (max-width: 768px) {
+  .image-hero { height: 250px; }
+  .image-large { max-width: 100%; }
+  .image-medium { max-width: 100%; }
+}
+
+@media (max-width: 640px) {
+  .image-hero { height: 200px; }
+  .image-large { max-width: 100%; }
+  .image-medium { max-width: 100%; }
+}
+
+@media (max-width: 640px) {
+  .header-inner { flex-direction: column; gap: 12px; }
+  .nav ul { flex-direction: column; gap: 8px; }
+  .section-content, .section-content.reverse { flex-direction: column; }
+  .services-grid, .poojas-grid { grid-template-columns: 1fr; }
+  .hero { height: 250px; }
+  .page { margin: 20px auto; }
+}
+
+@media (max-width: 768px) {
+  .history-section {
+    padding: 20px;
+  }
+  
+  .vision-mission {
+    grid-template-columns: 1fr;
+  }
+  
+  .timeline::before {
+    left: 10px;
+  }
+  
+  .timeline-item {
+    padding-left: 60px;
+  }
+  
+  .timeline-marker {
+    left: -8px;
+    width: 35px;
+    height: 35px;
+  }
+  
+  .sloka-header {
+    padding: 12px;
+  }
+
+  .slokas-container {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .sloka-divider {
+    width: 40px;
+    height: 2px;
+  }
+
+  .sloka-kannada {
+    font-size: 0.9rem;
+  }
+
+  .sloka-english {
+    font-size: 0.75rem;
+  }
+
+  .blessing-text {
+    font-size: 0.85rem;
+  }
+}
+
+/* About Page - Full Matha Image */
+.about-hero {
+  width: 100%;
+  margin-bottom: 40px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.matha-image-full {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+  background: #f9f9f9;
+}
+
+.about-content {
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  line-height: 1.8;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.about-content h2 {
+  color: #324a50;
+  margin-top: 20px;
+  margin-bottom: 12px;
+  border-bottom: 2px solid #ff4e24;
+  padding-bottom: 8px;
+}
+
+.about-content p {
+  color: #555;
+  font-size: 1rem;
+  margin-bottom: 12px;
+}
+
+.about-content strong {
+  color: #324a50;
+}
+
+@media (max-width: 768px) {
+  .about-content {
+    padding: 20px;
+  }
+  
+  .about-content h2 {
+    font-size: 1.3rem;
+  }
+}
