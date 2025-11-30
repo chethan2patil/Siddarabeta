@@ -4,14 +4,11 @@ body { font-family: Arial, sans-serif; background: #f7f7f7; color: #222; }
 
 #root { display: flex; flex-direction: column; min-height: 100vh; }
 
+/* Header Styles */
 .header {
-  background: #324a50;
-  color: white;
-  padding: 16px;
+  background: linear-gradient(135deg, #324a50 0%, #2a3f47 100%);
+  padding: 16px 20px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  position: sticky;
-  top: 0;
-  z-index: 100;
 }
 
 .header-inner {
@@ -30,22 +27,28 @@ body { font-family: Arial, sans-serif; background: #f7f7f7; color: #222; }
   font-weight: 700;
 }
 
+.brand:hover {
+  color: #ffd700;
+}
+
 .nav ul {
-  list-style: none;
   display: flex;
-  gap: 16px;
-  flex-wrap: wrap;
+  list-style: none;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
 }
 
 .nav a {
   color: white;
   text-decoration: none;
-  padding: 8px 12px;
-  border-radius: 6px;
-  transition: background .15s;
+  font-weight: 500;
+  transition: color 0.2s;
 }
 
-.nav a:hover { background: rgba(255,255,255,0.1); }
+.nav a:hover {
+  color: #ff4e24;
+}
 
 .page {
   flex: 1;
@@ -447,24 +450,21 @@ body { font-family: Arial, sans-serif; background: #f7f7f7; color: #222; }
 /* Sloka Header Styles */
 .sloka-header {
   background: linear-gradient(135deg, #2c1810 0%, #3d2817 100%);
-  padding: 16px;
+  padding: 12px 16px;
   text-align: center;
   border-bottom: 3px solid #ff4e24;
-}
-
-.sloka-blessing {
-  margin-bottom: 12px;
 }
 
 .blessing-text {
   color: #ffd700;
   font-size: 0.95rem;
   font-weight: 600;
-  margin: 0;
+  margin: 0 0 12px 0;
   font-style: italic;
   letter-spacing: 1px;
 }
 
+/* Slokas Container with Center Logo */
 .slokas-container {
   display: flex;
   justify-content: center;
@@ -476,7 +476,7 @@ body { font-family: Arial, sans-serif; background: #f7f7f7; color: #222; }
 .sloka-item {
   flex: 1;
   min-width: 250px;
-  max-width: 500px;
+  max-width: 380px;
 }
 
 .sloka-kannada {
@@ -496,23 +496,206 @@ body { font-family: Arial, sans-serif; background: #f7f7f7; color: #222; }
   opacity: 0.9;
 }
 
-.sloka-divider {
-  width: 2px;
-  height: 40px;
-  background: #ff4e24;
-  border-radius: 1px;
+/* Center Logo in Slokas - Only One */
+.sloka-center-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.matha-logo-center {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  object-fit: contain;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  border: 3px solid #ffd700;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+/* Jagadguru Section */
+.jagadguru-section {
+  background: white;
+  padding: 40px 20px;
+  margin: 40px 0;
+}
+
+.jagadguru-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.jagadguru-image {
+  flex: 0 1 280px;
+}
+
+.jagadguru-img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  border: 4px solid #ff4e24;
+  object-fit: contain;
+}
+
+.jagadguru-content {
+  flex: 1;
+  min-width: 300px;
+}
+
+.jagadguru-content h2 {
+  color: #324a50;
+  font-size: 1.8rem;
+  margin-bottom: 8px;
+}
+
+.jagadguru-fullname {
+  color: #ff4e24;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+  line-height: 1.6;
+}
+
+.jagadguru-former {
+  color: #555;
+  font-size: 0.95rem;
+  margin-bottom: 12px;
+  line-height: 1.6;
+}
+
+.jagadguru-institution {
+  color: #555;
+  font-size: 0.95rem;
+  margin-bottom: 16px;
+  line-height: 1.8;
+}
+
+.coronation-info {
+  background: #f9f9f9;
+  padding: 16px;
+  border-radius: 8px;
+  border-left: 4px solid #ff4e24;
+  margin-top: 16px;
+}
+
+.coronation-info h3 {
+  color: #324a50;
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+
+.coronation-info p {
+  color: #555;
+  font-size: 0.95rem;
+  margin: 8px 0;
+  line-height: 1.6;
+}
+
+/* Spiritual Leader Section */
+.spiritual-leader-section {
+  background: linear-gradient(135deg, #f5f5f5 0%, #ffffff 100%);
+  padding: 40px 20px;
+  margin: 40px 0;
+  border-top: 3px solid #ff4e24;
+  border-bottom: 3px solid #ff4e24;
+}
+
+.spiritual-leader-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.spiritual-leader-image {
+  flex: 0 1 200px;
+}
+
+.spiritual-leader-img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  border: 4px solid #ff4e24;
+  object-fit: contain;
+}
+
+.spiritual-leader-content {
+  flex: 1;
+  min-width: 300px;
+}
+
+.spiritual-leader-content h2 {
+  color: #324a50;
+  font-size: 1.6rem;
+  margin-bottom: 12px;
+}
+
+.spiritual-leader-content p {
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.8;
+  margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .matha-logo-center {
+    height: 70px;
+    width: 70px;
+  }
 }
 
 @media (max-width: 768px) {
   .image-hero { height: 250px; }
   .image-large { max-width: 100%; }
   .image-medium { max-width: 100%; }
-}
 
-@media (max-width: 640px) {
-  .image-hero { height: 200px; }
-  .image-large { max-width: 100%; }
-  .image-medium { max-width: 100%; }
+  .jagadguru-section,
+  .spiritual-leader-section {
+    padding: 30px 15px;
+    margin: 30px 0;
+  }
+
+  .jagadguru-container,
+  .spiritual-leader-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .jagadguru-image,
+  .spiritual-leader-image {
+    flex: 0 1 100%;
+  }
+
+  .jagadguru-img,
+  .spiritual-leader-img {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  .jagadguru-content h2,
+  .spiritual-leader-content h2 {
+    font-size: 1.4rem;
+  }
+
+  .jagadguru-fullname {
+    font-size: 0.9rem;
+  }
+
+  .jagadguru-former,
+  .jagadguru-institution,
+  .coronation-info p,
+  .spiritual-leader-content p {
+    font-size: 0.9rem;
+  }
 }
 
 @media (max-width: 640px) {
@@ -524,105 +707,60 @@ body { font-family: Arial, sans-serif; background: #f7f7f7; color: #222; }
   .page { margin: 20px auto; }
 }
 
-@media (max-width: 768px) {
-  .history-section {
-    padding: 20px;
-  }
-  
-  .vision-mission {
-    grid-template-columns: 1fr;
-  }
-  
-  .timeline::before {
-    left: 10px;
-  }
-  
-  .timeline-item {
-    padding-left: 60px;
-  }
-  
-  .timeline-marker {
-    left: -8px;
-    width: 35px;
-    height: 35px;
-  }
-  
+@media (max-width: 480px) {
   .sloka-header {
-    padding: 12px;
-  }
-
-  .slokas-container {
-    flex-direction: column;
-    gap: 12px;
-  }
-
-  .sloka-divider {
-    width: 40px;
-    height: 2px;
-  }
-
-  .sloka-kannada {
-    font-size: 0.9rem;
-  }
-
-  .sloka-english {
-    font-size: 0.75rem;
+    padding: 8px;
   }
 
   .blessing-text {
+    font-size: 0.75rem;
+    margin-bottom: 8px;
+  }
+
+  .matha-logo-center {
+    height: 50px;
+    width: 50px;
+  }
+
+  .sloka-kannada {
+    font-size: 0.8rem;
+  }
+
+  .sloka-english {
+    font-size: 0.7rem;
+  }
+
+  .slokas-container {
+    gap: 8px;
+  }
+
+  .jagadguru-section,
+  .spiritual-leader-section {
+    padding: 20px 12px;
+    margin: 20px 0;
+  }
+
+  .jagadguru-content h2,
+  .spiritual-leader-content h2 {
+    font-size: 1.2rem;
+  }
+
+  .jagadguru-fullname {
     font-size: 0.85rem;
   }
-}
 
-/* About Page - Full Matha Image */
-.about-hero {
-  width: 100%;
-  margin-bottom: 40px;
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-}
-
-.matha-image-full {
-  width: 100%;
-  height: auto;
-  display: block;
-  object-fit: contain;
-  background: #f9f9f9;
-}
-
-.about-content {
-  background: white;
-  padding: 30px;
-  border-radius: 8px;
-  line-height: 1.8;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-}
-
-.about-content h2 {
-  color: #324a50;
-  margin-top: 20px;
-  margin-bottom: 12px;
-  border-bottom: 2px solid #ff4e24;
-  padding-bottom: 8px;
-}
-
-.about-content p {
-  color: #555;
-  font-size: 1rem;
-  margin-bottom: 12px;
-}
-
-.about-content strong {
-  color: #324a50;
-}
-
-@media (max-width: 768px) {
-  .about-content {
-    padding: 20px;
+  .jagadguru-former,
+  .jagadguru-institution,
+  .coronation-info p,
+  .spiritual-leader-content p {
+    font-size: 0.85rem;
   }
-  
-  .about-content h2 {
-    font-size: 1.3rem;
+
+  .coronation-info {
+    padding: 12px;
+  }
+
+  .coronation-info h3 {
+    font-size: 1rem;
   }
 }
