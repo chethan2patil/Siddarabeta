@@ -3,11 +3,11 @@ import image1 from './image.jpg';
 import image2 from './images2.jpeg';
 import image3 from './image3.jpeg';
 import image4 from './images4.jpeg';
-import image5 from './image5.jpeg'; // Changed: use images4.jpeg instead of images5.jpeg
+import image4Duplicate from './images4.jpeg'; // Use image4 twice since we only have 4 images
 
 export const siteData = {
   site: {
-    name: "Hindu Math Organization",
+    name: "Siddarabetta Matha",
     tagline: "Education & Social Services for the Underprivileged",
     year: new Date().getFullYear(),
   },
@@ -21,27 +21,27 @@ export const siteData = {
   ],
   home: {
     hero: {
-      title: "Welcome to Siddarabetta Mata",
+      title: "Welcome to Siddarabetta Matha",
       subtitle: "Serving the community through education and social services",
-      image: image1, // Hero image
+      image: image1,
     },
     mission: {
       title: "Our Mission",
       description: "We strive to provide quality education and social services to the underprivileged, fostering a sense of community and support.",
-      image: image2, // Mission image
+      image: image2,
     },
     latestUpdates: {
       title: "Latest Updates",
       description: "Stay tuned for updates on our upcoming poojas and community events.",
-      image: image3, // Updates image
+      image: image3,
     },
   },
   about: {
     title: "About Us",
     founded: "2015",
     mission: "We are dedicated to providing educational and social services to underprivileged communities.",
-    history: "Founded in 2015, the Hindu Math Organization has been at the forefront of social service, focusing on education, healthcare, and community development.",
-    image: image4, // About image
+    history: "Founded in 2015, Siddarabetta Matha has been at the forefront of social service, focusing on education, healthcare, and community development.",
+    image: image4,
   },
   services: [
     {
@@ -105,24 +105,24 @@ export const siteData = {
   donate: {
     title: "Support Our Mission",
     subtitle: "Your donation helps us continue our educational and social services",
-    image: image5, // Donate image
+    image: image4Duplicate,
     methods: [
       {
         id: 1,
         name: "Bank Transfer",
-        details: "Account: Hindu Math Org | IFSC: AXIS0001234",
+        details: "Account: Siddarabetta Matha | IFSC: AXIS0001234",
         icon: "🏦",
       },
       {
         id: 2,
         name: "Online Payment",
-        details: "Pay via UPI: hindumathorg@upi or Credit/Debit Card",
+        details: "Pay via UPI: siddarabettamatha@upi or Credit/Debit Card",
         icon: "💳",
       },
       {
         id: 3,
         name: "Cheque",
-        details: "Send cheque payable to 'Hindu Math Organization'",
+        details: "Send cheque payable to 'Siddarabetta Matha'",
         icon: "📝",
       },
     ],
@@ -135,9 +135,9 @@ export const siteData = {
   },
   contact: {
     title: "Contact Us",
-    email: "info@hindumathorg.com",
+    email: "info@siddarabettamatha.com",
     phone: "+91-XXXX-XXXX-XXXX",
-    address: "123 Temple Street, City, State 110001",
+    address: "Siddarabetta, City, State 110001",
     hours: "Monday - Friday: 9:00 AM - 6:00 PM",
     image: "https://via.placeholder.com/600x400?text=Contact+Us",
   },
