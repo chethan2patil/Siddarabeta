@@ -4,7 +4,10 @@ import image2 from './images2.jpeg';
 import image3 from './image3.jpeg';
 import image4 from './images4.jpeg';
 import image4Duplicate from './images4.jpeg';
-import mathaImage from './matha-image.jpg'; // Add the pasted image
+import image5 from './image.jpg'; // Add image 5
+import mathaImage from './matha-image.jpg';
+import guruImage from './guru-image.jpg';
+import mathaLogo from './matha-logo.png';
 
 export const siteData = {
   site: {
@@ -13,6 +16,8 @@ export const siteData = {
     year: new Date().getFullYear(),
     parentMatha: "ಬಾಳೆಹೊನ್ನೂರು ಖಾಸಾ ಶಾಖಾ ಮಠ ಸಿದ್ದರಬೆಟ್ಟ (Balehonnuru Kasa Shaka Matha)",
     googleMapLink: "https://share.google.com/6CambUp3H8H9KHd1u",
+    guruImage: guruImage,
+    mathaLogo: mathaLogo,
     slokas: {
       sloka1: "ಮನವ ಧರ್ಮಕ್ಕೆ ಜಯವಾಗಲಿ | ಧರ್ಮದಿಂದಲೇ ವಿಶ್ವಕ್ಕೆ ಶಾಂತಿ ||",
       sloka1Eng: "MANAVA DHARMAKKE JAYAVAGALI | DHARMADINDALE VISHWAKKE SHANTI ||",
@@ -36,6 +41,22 @@ export const siteData = {
       subtitle: "A Branch of Balehonnuru Kasa Shaka Matha - Serving the community through education and social services",
       image: image1,
     },
+    jagadguru: {
+      title: "Sri Jagadguruji",
+      fullName: "Shree Shree Shree 1008 Jagadguru Prasannarenuka Veera Someshwara Rajadeshikendra Shivacharya Mahaswamiji",
+      formerName: "Shree Shathasthala Brahma Siddalinga Shivacharya",
+      institution: "Melanagavimath of Shivaganga math",
+      description: "of Rambhapuri Peetha was crowned as per the will of former Jagadguru Shree Shree Shree Veera Rudramuni Shivacharya to take over the reigns of the Rambhapuri Peetha after him and be the worthy successor.",
+      coronationDate: "6th February 1992",
+      coronationDetails: "Shalivahana Saka 1614 Prajapathi Nama Samavatsara, Magha Shuddha tritiya",
+      coronationInfo: "The coronation took place under the gracious presence of the Peethadheeshwaras of Kedar, Kashi, Ujjain and Shrishaila. The crowning ceremony was presided by them. The naming ceremony of the new Jagadguru was done with all pomp and gaiety.",
+      image: guruImage,
+    },
+    spiritualLeader: {
+      title: "Sri Veerabhadrashivacharya Swamiji",
+      description: "A revered spiritual leader dedicated to the propagation of Hindu philosophy, culture, and social welfare. Sri Veerabhadrashivacharya Swamiji continues the legacy of spiritual guidance and community service through various educational and social programs.",
+      image: image5,
+    },
     mission: {
       title: "Our Mission",
       description: "We strive to provide quality education and social services to the underprivileged, fostering a sense of community and support.",
@@ -49,7 +70,7 @@ export const siteData = {
   },
   about: {
     title: "About Us",
-    founded: "2006", // Changed from 2015 to 2006
+    founded: "2006",
     mission: "We are dedicated to providing educational and social services to underprivileged communities.",
     history: "Siddarabetta Matha is a branch of the historic Balehonnuru Kasa Shaka Matha. Founded in 2006, our organization has been at the forefront of social service, focusing on education, healthcare, and community development. We carry forward the spiritual and social values of our parent institution.",
     image: mathaImage,
