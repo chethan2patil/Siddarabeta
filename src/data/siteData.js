@@ -3,26 +3,37 @@ import image1 from './image.jpg';
 import image2 from './images2.jpeg';
 import image3 from './image3.jpeg';
 import image4 from './images4.jpeg';
-import image4Duplicate from './images4.jpeg'; // Use image4 twice since we only have 4 images
+import image4Duplicate from './images4.jpeg';
+import mathaImage from './matha-image.jpg'; // Add the pasted image
 
 export const siteData = {
   site: {
     name: "Siddarabetta Matha",
     tagline: "Education & Social Services for the Underprivileged",
     year: new Date().getFullYear(),
+    parentMatha: "ಬಾಳೆಹೊನ್ನೂರು ಖಾಸಾ ಶಾಖಾ ಮಠ ಸಿದ್ದರಬೆಟ್ಟ (Balehonnuru Kasa Shaka Matha)",
+    googleMapLink: "https://share.google.com/6CambUp3H8H9KHd1u",
+    slokas: {
+      sloka1: "ಮನವ ಧರ್ಮಕ್ಕೆ ಜಯವಾಗಲಿ | ಧರ್ಮದಿಂದಲೇ ವಿಶ್ವಕ್ಕೆ ಶಾಂತಿ ||",
+      sloka1Eng: "MANAVA DHARMAKKE JAYAVAGALI | DHARMADINDALE VISHWAKKE SHANTI ||",
+      sloka2: "ಸಾಹಿತ್ಯ-ಸಂಸ್ಕೃತಿ ಸಂವರ್ಧಿಸಲಿ | ಶಾಂತಿ-ಸಮೃದ್ಧಿ ಸರ್ವರಿಗಾಗಲಿ ||",
+      sloka2Eng: "SAHITYA-SAMSKRUTI SAMVARDHISALI | SHANTI-SAMRUDHI SARVARIGAAGALI ||",
+      blessing: "|| Sri Jagadguru Panchacharyaha Praseedantu ||",
+    },
   },
   navigation: [
     { id: 1, label: "Home", path: "/" },
     { id: 2, label: "About Us", path: "/about" },
-    { id: 3, label: "Services", path: "/services" },
-    { id: 4, label: "Donate", path: "/donate" },
-    { id: 5, label: "Poojas", path: "/poojas" },
-    { id: 6, label: "Contact", path: "/contact" },
+    { id: 3, label: "History", path: "/history" },
+    { id: 4, label: "Services", path: "/services" },
+    { id: 5, label: "Donate", path: "/donate" },
+    { id: 6, label: "Poojas", path: "/poojas" },
+    { id: 7, label: "Contact", path: "/contact" },
   ],
   home: {
     hero: {
       title: "Welcome to Siddarabetta Matha",
-      subtitle: "Serving the community through education and social services",
+      subtitle: "A Branch of Balehonnuru Kasa Shaka Matha - Serving the community through education and social services",
       image: image1,
     },
     mission: {
@@ -38,10 +49,68 @@ export const siteData = {
   },
   about: {
     title: "About Us",
-    founded: "2015",
+    founded: "2006", // Changed from 2015 to 2006
     mission: "We are dedicated to providing educational and social services to underprivileged communities.",
-    history: "Founded in 2015, Siddarabetta Matha has been at the forefront of social service, focusing on education, healthcare, and community development.",
-    image: image4,
+    history: "Siddarabetta Matha is a branch of the historic Balehonnuru Kasa Shaka Matha. Founded in 2006, our organization has been at the forefront of social service, focusing on education, healthcare, and community development. We carry forward the spiritual and social values of our parent institution.",
+    image: mathaImage,
+    parentMatha: "ಬಾಳೆಹೊನ್ನೂರು ಖಾಸಾ ಶಾಖಾ ಮಠ ಸಿದ್ದರಬೆಟ್ಟ (Balehonnuru Kasa Shaka Matha Siddarabetta)",
+  },
+  history: {
+    title: "Our Heritage & History",
+    subtitle: "Understanding the spiritual lineage and social mission of our organization",
+    parentMathaInfo: {
+      title: "Parent Institution: Balehonnuru Kasa Shaka Matha",
+      description: "Siddarabetta Matha is a branch of the Balehonnuru Kasa Shaka Matha, a venerable spiritual institution with a rich history of serving humanity through education, social welfare, and spiritual guidance.",
+      image: mathaImage,
+    },
+    historicalBackground: [
+      {
+        period: "Ancient Origins",
+        content: "The Kasa Shaka Matha tradition traces its roots to ancient Hindu spiritual practices and philosophy, emphasizing the importance of education and social service as integral parts of spiritual development.",
+      },
+      {
+        period: "Medieval Period",
+        content: "During the medieval period, the Matha tradition played a crucial role in preserving and propagating Hindu philosophy, literature, and culture. The institutions served as centers of learning and spiritual guidance.",
+      },
+      {
+        period: "Modern Era",
+        content: "In the modern era, the Matha has evolved to address contemporary social challenges while maintaining its core spiritual values. Education, healthcare, and community development have become central to our mission.",
+      },
+      {
+        period: "Contemporary Mission",
+        content: "Today, Siddarabetta Matha continues the legacy of service to the underprivileged, providing educational opportunities, healthcare support, and spiritual guidance to those in need.",
+      },
+    ],
+    coreValues: [
+      {
+        title: "Spiritual Excellence",
+        description: "Maintaining the highest standards of spiritual practice and teaching",
+      },
+      {
+        title: "Social Service",
+        description: "Dedicating ourselves to the welfare and upliftment of society",
+      },
+      {
+        title: "Education",
+        description: "Providing access to quality education for all, regardless of economic status",
+      },
+      {
+        title: "Community Care",
+        description: "Building strong, supportive communities through healthcare and social programs",
+      },
+      {
+        title: "Preserving Culture",
+        description: "Protecting and promoting Hindu traditions, philosophy, and cultural values",
+      },
+      {
+        title: "Inclusive Growth",
+        description: "Creating opportunities for sustainable development and prosperity for all",
+      },
+    ],
+    philosophyContent: "Our philosophy is rooted in the belief that true spiritual development comes through service to humanity. We believe in the power of education to transform lives and communities. By combining spiritual wisdom with practical social work, we aim to create lasting positive change in society.",
+    visionStatement: "To be a beacon of spiritual light and social progress, serving humanity with compassion, integrity, and excellence while preserving the timeless values of Hindu philosophy and culture.",
+    missionStatement: "To provide holistic development through education, healthcare, and spiritual guidance; to uplift the underprivileged through our programs; and to create a society where every individual has the opportunity to fulfill their potential.",
+    leadershipImage: mathaImage,
   },
   services: [
     {
@@ -137,8 +206,9 @@ export const siteData = {
     title: "Contact Us",
     email: "info@siddarabettamatha.com",
     phone: "+91-XXXX-XXXX-XXXX",
-    address: "Siddarabetta, City, State 110001",
+    address: "Siddru betta Rd, Siddara Betta, Negilala, Koratagere Taluk, Karnataka 572138",
     hours: "Monday - Friday: 9:00 AM - 6:00 PM",
+    googleMapLink: "https://share.google.com/6CambUp3H8H9KHd1u",
     image: "https://via.placeholder.com/600x400?text=Contact+Us",
   },
 };
