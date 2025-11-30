@@ -252,3 +252,28 @@ body { font-family: Arial, sans-serif; background: #f7f7f7; color: #222; }
   .hero { height: 250px; }
   .page { margin: 20px auto; }
 }
+
+.facebook-feed {
+  margin: 60px 0;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.facebook-feed h2 {
+  color: #324a50;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+}
+
+.fb-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.fb-container iframe {
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}

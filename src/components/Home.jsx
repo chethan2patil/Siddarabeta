@@ -1,5 +1,6 @@
 import { siteData } from '../data/siteData';
 import ResponsiveImage from './ResponsiveImage';
+import FacebookFeed from './FacebookFeed';
 
 export default function Home() {
   const { home } = siteData;
@@ -32,6 +33,9 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Add Facebook Feed before footer */}
+      <FacebookFeed />
     </main>
   );
 }
